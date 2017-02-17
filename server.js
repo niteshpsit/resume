@@ -19,8 +19,8 @@ mongoose.connect(config.db.connection, error => {
 app.use(express.static(path.join(__dirname, 'public')))
 
 /**
- * Starting Server At Given Port
+ * Starting Server
  **/
-app.listen(port, () => {
-    console.log("server started at :", port)
+app.listen(config.port, () => {
+    console.log("server started at :", config.port)
 })
