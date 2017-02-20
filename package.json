@@ -9,6 +9,7 @@
   "author": "Nitesh Jatav",
   "license": "ISC",
   "dependencies": {
+    "body-parser": "~1.0.1",
     "express": "^4.14.0",
     "lodash": "^4.17.4",
     "mongoose": "^4.8.3"
