@@ -1,0 +1,18 @@
+{
+    "name":"Nitesh jatav",
+    "profession":"Software Engineer",
+    "address":{
+	    "house_no": 849,
+        "landmark": "Near SBI ATM",
+        "citty": "Gurgaon",
+        "country": "India"
+	},
+    "contact": {
+        "primary_phone": "8860163029",
+        "secondary_phone": "9795816929",
+        "sky_username": "niteshpsit",
+        "email": "niteshpsit@gmail.com"
+    },
+    "image": "/img/img.jpg",
+    "languages_know": ["English","Hindi"]
+}
