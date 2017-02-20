@@ -28,4 +28,4 @@ const userSchema = new Schema({
  * Schema is useless so far
  *  we need to create model using it 
 **/
-const user = mongoose.model('User', userSchema)
+module.exports = mongoose.model('User', userSchema)
