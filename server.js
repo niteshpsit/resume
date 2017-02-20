@@ -1,8 +1,9 @@
 // Require Dependencies
 const express = require('express')
 const path = require('path')
-const mongoose = require('mongoose');
+const mongoose = require('mongoose')
 const config = require('./config')
+const routes = require('./routes')
 
 // Initilize the app with express server
 const app = express()
@@ -13,6 +14,9 @@ mongoose.connect(config.db.connection, error => {
     if (error)
         console.log(error)
 });
+
+// Include the routes in server file
+routes(app);
 /**
  * Define the public folder path that will contain the public file likes images, css, javascript, html 
  **/
