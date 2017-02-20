@@ -26,5 +26,13 @@ router.post('/',(req, res)=>{
 
 })
 
+// Delete the User data from database Permanently
+router.delete('/:id',(req, res)=>{
+    User.findByIdAndRemove(req.params.id,(err, user)=>{
+        if(err)
+            res.status(422).json(err)
+        res.json(user)
+    })
+})
 // Export the router 
 module.exports = router
